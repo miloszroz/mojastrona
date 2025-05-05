@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moja Pierwsza Strona</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rozmus shop</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
       text-align: center;
-      background-color: #f2f2f2;
-      padding: 50px;
     }
-    h1 {
+
+    .logo {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 2.5rem;
+      margin: 40px 0;
+      text-transform: uppercase;
+      color: #aaa;
+      text-shadow: 1px 1px 0 #333, 2px 2px 5px #00f;
+      letter-spacing: 4px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 40px;
+    }
+
+    .product {
+      max-width: 200px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    .product h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+
+    .status {
+      font-weight: bold;
+      margin-bottom: 5px;
       color: #333;
     }
-    p {
-      color: #666;
-    }
-    .box {
-      background-color: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 600px;
-      margin: auto;
+
+    .price {
+      font-size: 18px;
+      color: #007bff;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Witaj na mojej stronie!</h1>
-    <p>To jest moja pierwsza strona internetowa stworzona za darmo.</p>
-    <p>Działa na każdym urządzeniu 🚀</p>
+  <div class="logo">rozmus</div>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200/000000/FFFFFF?text=CD+Standard" alt="ERA47 CD">
+      <h3>ERA47 CD (STANDARD)</h3>
+      <div class="status">Dostępny</div>
+      <div class="price">60,00 zł</div>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200/000000/FFFFFF?text=Preorder" alt="ERA47 CD Preorder">
+      <h3>ERA47 CD PREORDER + 4RTEFAK7</h3>
+      <div class="status" style="color: gray;">Niedostępny</div>
+      <div class="price">60,00 zł</div>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200/111111/00FFFF?text=Black+Tee" alt="ERA47 Black Tee">
+      <h3>ERA47 BLACK TEE</h3>
+      <div class="status" style="color: gray;">Niedostępny</div>
+      <div class="price">147,00 zł</div>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200/FFFFFF/0000FF?text=White+Tee" alt="ERA47 White Tee">
+      <h3>ERA47 WHITE TEE</h3>
+      <div class="status" style="color: gray;">Niedostępny</div>
+      <div class="price">147,00 zł</div>
+    </div>
   </div>
 </body>
 </html>
